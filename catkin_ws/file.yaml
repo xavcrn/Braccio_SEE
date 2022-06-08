@@ -1,0 +1,14 @@
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_xavier_aspire_e5_573g_local__41515: http://xavier-Aspire-E5-573G.local:41515/
+rosversion: '1.15.14
+
+  '
+run_id: d1fb2ef8-e726-11ec-99eb-6b9198d997f8
+turtlesim:
+  background_b: 0
+  background_g: 86
+  background_r: 0
