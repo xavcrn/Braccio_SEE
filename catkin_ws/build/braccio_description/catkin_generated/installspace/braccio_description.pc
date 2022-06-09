@@ -1,0 +1,8 @@
+prefix=/home/xavier/robot_braccio/depot_git/catkin_ws/install
+
+Name: braccio_description
+Description: Description of braccio_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
