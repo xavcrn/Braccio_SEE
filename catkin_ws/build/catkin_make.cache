@@ -1,2 +1,2 @@
-beginner_tutorials:braccio_description
+beginner_tutorials:braccio_description:poppy_ergo_jr_description
 -DCATKIN_DEVEL_PREFIX=/home/xavier/robot_braccio/depot_git/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xavier/robot_braccio/depot_git/catkin_ws/install -G Unix Makefiles

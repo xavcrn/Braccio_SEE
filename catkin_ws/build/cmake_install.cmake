@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/braccio_description/cmake_install.cmake")
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/beginner_tutorials/cmake_install.cmake")
+  include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/poppy_ergo_jr_description/cmake_install.cmake")
 
 endif()
 

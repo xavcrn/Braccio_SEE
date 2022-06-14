@@ -1,0 +1,8 @@
+prefix=/home/xavier/robot_braccio/depot_git/catkin_ws/install
+
+Name: poppy_ergo_jr_description
+Description: Description of poppy_ergo_jr_description
+Version: 0.0.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

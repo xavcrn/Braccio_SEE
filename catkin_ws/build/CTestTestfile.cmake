@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("braccio_description")
 subdirs("beginner_tutorials")
+subdirs("poppy_ergo_jr_description")

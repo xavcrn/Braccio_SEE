@@ -19,6 +19,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "poppy_ergo_jr_description/catkin_generated/package.cmake"
   "/home/xavier/robot_braccio/depot_git/catkin_ws/devel/share/beginner_tutorials/cmake/beginner_tutorials-msg-paths.cmake"
   "/home/xavier/robot_braccio/depot_git/catkin_ws/src/CMakeLists.txt"
   "/home/xavier/robot_braccio/depot_git/catkin_ws/src/beginner_tutorials/CMakeLists.txt"
@@ -29,6 +30,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/xavier/robot_braccio/depot_git/catkin_ws/src/beginner_tutorials/scripts/talker.py"
   "/home/xavier/robot_braccio/depot_git/catkin_ws/src/braccio_description/CMakeLists.txt"
   "/home/xavier/robot_braccio/depot_git/catkin_ws/src/braccio_description/package.xml"
+  "/home/xavier/robot_braccio/depot_git/catkin_ws/src/poppy_ergo_jr_description/CMakeLists.txt"
+  "/home/xavier/robot_braccio/depot_git/catkin_ws/src/poppy_ergo_jr_description/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -219,6 +222,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "braccio_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   "beginner_tutorials/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "poppy_ergo_jr_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
