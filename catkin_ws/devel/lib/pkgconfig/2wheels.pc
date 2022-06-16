@@ -1,0 +1,8 @@
+prefix=/home/xavier/robot_braccio/depot_git/catkin_ws/devel
+
+Name: 2wheels
+Description: Description of 2wheels
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

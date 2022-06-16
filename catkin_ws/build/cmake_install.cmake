@@ -132,7 +132,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/braccio_description/cmake_install.cmake")
+  include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/two_wheels/cmake_install.cmake")
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/beginner_tutorials/cmake_install.cmake")
+  include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/quadruped/cmake_install.cmake")
   include("/home/xavier/robot_braccio/depot_git/catkin_ws/build/poppy_ergo_jr_description/cmake_install.cmake")
 
 endif()

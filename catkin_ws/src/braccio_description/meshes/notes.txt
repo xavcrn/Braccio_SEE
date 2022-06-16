@@ -1,0 +1,7 @@
+Attention /!\
+
+Pour générer un URDF correctement, il est nécessaire de définir les contraintes en
+s'assurant qu'un enfant n'a toujours qu'un seul parent et qu'il n'y a qu'une pièce
+qui n'ait pas de parent. Cette pièce sera utilsiée comme base dans onshape-bullet
+et elle doit s'appeler "base_link" pour que RViz puisse afficher correctement le
+robot.

@@ -55,7 +55,9 @@ CMAKE_BINARY_DIR = /home/xavier/robot_braccio/depot_git/catkin_ws/build
 # The main recursive "all" target.
 all: gtest/all
 all: braccio_description/all
+all: two_wheels/all
 all: beginner_tutorials/all
+all: quadruped/all
 all: poppy_ergo_jr_description/all
 
 .PHONY : all
@@ -63,7 +65,9 @@ all: poppy_ergo_jr_description/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: braccio_description/preinstall
+preinstall: two_wheels/preinstall
 preinstall: beginner_tutorials/preinstall
+preinstall: quadruped/preinstall
 preinstall: poppy_ergo_jr_description/preinstall
 
 .PHONY : preinstall
@@ -76,7 +80,9 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: braccio_description/clean
+clean: two_wheels/clean
 clean: beginner_tutorials/clean
+clean: quadruped/clean
 clean: poppy_ergo_jr_description/clean
 
 .PHONY : clean
@@ -226,6 +232,42 @@ poppy_ergo_jr_description/preinstall:
 poppy_ergo_jr_description/clean:
 
 .PHONY : poppy_ergo_jr_description/clean
+
+#=============================================================================
+# Directory level rules for directory quadruped
+
+# Recursive "all" directory target.
+quadruped/all:
+
+.PHONY : quadruped/all
+
+# Recursive "preinstall" directory target.
+quadruped/preinstall:
+
+.PHONY : quadruped/preinstall
+
+# Recursive "clean" directory target.
+quadruped/clean:
+
+.PHONY : quadruped/clean
+
+#=============================================================================
+# Directory level rules for directory two_wheels
+
+# Recursive "all" directory target.
+two_wheels/all:
+
+.PHONY : two_wheels/all
+
+# Recursive "preinstall" directory target.
+two_wheels/preinstall:
+
+.PHONY : two_wheels/preinstall
+
+# Recursive "clean" directory target.
+two_wheels/clean:
+
+.PHONY : two_wheels/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
