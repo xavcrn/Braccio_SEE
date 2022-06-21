@@ -1,22 +1,26 @@
 <robot name="onshape">
 <link name="base_link">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0486686 -0.0583018 -0.164128" rpy="-2.52904e-15 -3.23741e-22 1.5708" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/base_link_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/base_link.stl"/>
 </geometry>
 <material name="base_link_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
+<!-- Shapes for base_link -->
 <collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.00833141 -0.0553018 -0.0991279" rpy="-2.52904e-15 -3.23741e-22 1.5708" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/base_link_collision.stl"/>
+<box size="0.46 0.38 0.13" />
 </geometry>
-<material name="base_link_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
+</collision>
+<collision>
+<origin xyz="0.00833141 -0.184802 -0.00662794" rpy="-2.52904e-15 -3.23741e-22 1.5708" />
+<geometry>
+<box size="0.119 0.19 0.055" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -27,22 +31,32 @@
 
 <link name="socle">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0490748 0.085 -0.097" rpy="-1.5708 1.67129e-31 -8.18755e-37" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/socle_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/socle.stl"/>
 </geometry>
 <material name="socle_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
+<!-- Shapes for socle -->
 <collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0490748 0.085 -0.0485" rpy="-1.5708 8.35647e-32 -1.0472" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/socle_collision.stl"/>
+<box size="0.116 0.097 0.2" />
 </geometry>
-<material name="socle_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
+</collision>
+<collision>
+<origin xyz="-0.0490748 0.085 -0.0485" rpy="-1.5708 8.35647e-32 1.0472" />
+<geometry>
+<box size="0.116 0.097 0.2" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.0490748 0.085 -0.0485" rpy="-1.5708 1.67129e-31 -8.18755e-37" />
+<geometry>
+<box size="0.116 0.097 0.2" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -51,25 +65,17 @@
 </inertial>
 </link>
 
-<link name="part_7">
+<link name="moteur_bas">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.00974605 0.0056295 -0.0797659" rpy="0 -0 7.79108e-37" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_7_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas.stl"/>
 </geometry>
-<material name="part_7_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_material">
+<color rgba="0.207843 0.207843 0.207843 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_7_collision.stl"/>
-</geometry>
-<material name="part_7_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for moteur_bas -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -77,25 +83,17 @@
 </inertial>
 </link>
 
-<link name="part_5">
+<link name="moteur_bas_c2">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.00974605 -0.0180637 -0.0837659" rpy="-1.65316e-31 5.42146e-39 2.78264e-32" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_5_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c2.stl"/>
 </geometry>
-<material name="part_5_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_c2_material">
+<color rgba="0.207843 0.207843 0.207843 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_5_collision.stl"/>
-</geometry>
-<material name="part_5_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for moteur_bas_c2 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -103,25 +101,17 @@
 </inertial>
 </link>
 
-<link name="part_6">
+<link name="moteur_bas_c1">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.00974605 0.0180637 0.0862659" rpy="3.14159 6.64636e-38 1.18346e-30" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_6_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c1.stl"/>
 </geometry>
-<material name="part_6_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_c1_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_6_collision.stl"/>
-</geometry>
-<material name="part_6_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for moteur_bas_c1 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -129,25 +119,17 @@
 </inertial>
 </link>
 
-<link name="part_4">
+<link name="moteur_bas_c3">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.00974605 -0.0180637 -0.0905659" rpy="1.12897e-31 2.71073e-39 9.2251e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_4_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c3.stl"/>
 </geometry>
-<material name="part_4_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_c3_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_4_collision.stl"/>
-</geometry>
-<material name="part_4_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for moteur_bas_c3 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -156,32 +138,30 @@
 </link>
 
 <joint name="3f" type="fixed">
-<origin xyz="-6.08714e-15 6.45312e-15 -0.0043" rpy="3.14159 1.24299e-32 -5.55112e-17" />
-<parent link="part_6" />
-<child link="part_4" />
+<origin xyz="-6.08888e-15 6.45317e-15 -0.0043" rpy="3.14159 1.24299e-32 -5.55112e-17" />
+<parent link="moteur_bas_c1" />
+<child link="moteur_bas_c3" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
-<link name="part_1">
+<link name="support_moteur_epaule">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0086092 -0.00233288 -0.0035" rpy="0 -0 2.53568e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_1_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/support_moteur_epaule.stl"/>
 </geometry>
-<material name="part_1_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="support_moteur_epaule_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
+<!-- Shapes for support_moteur_epaule -->
 <collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="9.07964e-05 0.000667116 0.0385" rpy="0 -0 2.53568e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_1_collision.stl"/>
+<box size="0.0424 0.048 0.09" />
 </geometry>
-<material name="part_1_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -190,24 +170,100 @@
 </inertial>
 </link>
 
-<link name="part_7_2">
+<link name="moteur_bas_2">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.00125395 -0.0297363 0.0457659" rpy="3.14159 -9.2251e-31 -2.71073e-39" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_7_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas.stl"/>
 </geometry>
-<material name="part_7_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_material">
+<color rgba="0.207843 0.207843 0.207843 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<!-- Shapes for moteur_bas -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="moteur_bas_c2_2">
+<visual>
+<origin xyz="0.00974605 -0.0180637 -0.0837659" rpy="-1.23739e-32 8.77609e-32 1.51056e-33" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_7_2_collision.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c2.stl"/>
 </geometry>
-<material name="part_7_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_c2_material">
+<color rgba="0.207843 0.207843 0.207843 1.0"/>
 </material>
+</visual>
+<!-- Shapes for moteur_bas_c2 -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="moteur_bas_c3_2">
+<visual>
+<origin xyz="0.00974605 0.0180637 0.0857659" rpy="-3.14159 1.289e-32 1.20159e-43" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c3.stl"/>
+</geometry>
+<material name="moteur_bas_c3_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
+</material>
+</visual>
+<!-- Shapes for moteur_bas_c3 -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="moteur_bas_c1_2">
+<visual>
+<origin xyz="0.00974605 -0.0180637 -0.0905659" rpy="9.80583e-32 -3.10856e-33 6.37365e-47" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c1.stl"/>
+</geometry>
+<material name="moteur_bas_c1_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
+</material>
+</visual>
+<!-- Shapes for moteur_bas_c1 -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="bras">
+<visual>
+<origin xyz="-0.180612 -0.0225 0.020439" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/bras.stl"/>
+</geometry>
+<material name="bras_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<!-- Shapes for bras -->
+<collision>
+<origin xyz="-0.148112 3.46945e-18 0.025889" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<box size="0.0409 0.175 0.045" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.0406122 3.46945e-18 0.025989" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<box size="0.0681 0.094 0.045" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -216,24 +272,64 @@
 </inertial>
 </link>
 
-<link name="part_5_2">
+<link name="moteur_coude">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.011 0.02775 -0.002" rpy="-1.5708 -5.04086e-32 -2.46519e-32" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_5_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_coude.stl"/>
 </geometry>
-<material name="part_5_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_coude_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<!-- Shapes for moteur_coude -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="moteur_bas_c1_3">
+<visual>
+<origin xyz="0.00974605 -0.0180637 -0.0857659" rpy="1.32145e-31 2.7173e-33 -5.91646e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_5_2_collision.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_bas_c1.stl"/>
 </geometry>
-<material name="part_5_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_bas_c1_material">
+<color rgba="0.74902 0.74902 0.74902 1.0"/>
 </material>
+</visual>
+<!-- Shapes for moteur_bas_c1 -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="avant_bras">
+<visual>
+<origin xyz="-0.158612 -0.0225 0.020439" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/avant_bras.stl"/>
+</geometry>
+<material name="avant_bras_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<!-- Shapes for avant_bras -->
+<collision>
+<origin xyz="-0.113612 3.46945e-18 0.024439" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<box size="0.038 0.14 0.045" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.0181122 3.46945e-18 0.023739" rpy="-1.5708 -1.5708 0" />
+<geometry>
+<box size="0.0646 0.093 0.045" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -242,24 +338,52 @@
 </inertial>
 </link>
 
-<link name="part_4_2">
+<link name="moteur_poignet_incl">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.00807551 -0.0225 -0.028" rpy="1.5708 -5.3619e-32 5.1769e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_4_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_poignet_incl.stl"/>
 </geometry>
-<material name="part_4_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_poignet_incl_material">
+<color rgba="0.792157 0.819608 0.933333 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<!-- Shapes for moteur_poignet_incl -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="poignet">
+<visual>
+<origin xyz="-3.46945e-18 0.0506859 -0.0295" rpy="3.14159 1.95462e-16 5.42342e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_4_2_collision.stl"/>
+<mesh filename="package://braccio_description/meshes/poignet.stl"/>
 </geometry>
-<material name="part_4_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="poignet_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
+</visual>
+<!-- Shapes for poignet -->
+<collision>
+<origin xyz="-3.46945e-18 0.0111859 -0.0295" rpy="3.14159 1.95462e-16 5.42342e-31" />
+<geometry>
+<box size="0.036 0.049 0.06" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.0005 0.0581859 -0.02975" rpy="3.14159 1.95462e-16 5.42342e-31" />
+<geometry>
+<box size="0.043 0.045 0.0405" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.006 0.0941859 -0.0295" rpy="3.14159 1.95462e-16 5.42342e-31" />
+<geometry>
+<box size="0.054 0.041 0.041" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -268,25 +392,17 @@
 </inertial>
 </link>
 
-<link name="part_6_2">
+<link name="moteur_haut">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.0135 0.0145 -0.016" rpy="-2.12006e-30 7.10361e-32 -4.28114e-32" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_6_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_haut.stl"/>
 </geometry>
-<material name="part_6_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_haut_material">
+<color rgba="0.0980392 0.0980392 0.0980392 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_6_2_collision.stl"/>
-</geometry>
-<material name="part_6_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for moteur_haut -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -294,207 +410,17 @@
 </inertial>
 </link>
 
-<link name="part_1_2">
+<link name="moteur_poignet_rot_c1">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0 0 -0.01424" rpy="0 -0 -4.6775e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_1_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_poignet_rot_c1.stl"/>
 </geometry>
-<material name="part_1_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_poignet_rot_c1_material">
+<color rgba="0.0980392 0.0980392 0.0980392 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_1_2_collision.stl"/>
-</geometry>
-<material name="part_1_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="part_17">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_17_visual.stl"/>
-</geometry>
-<material name="part_17_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_17_collision.stl"/>
-</geometry>
-<material name="part_17_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="part_6_3">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_6_3_visual.stl"/>
-</geometry>
-<material name="part_6_3_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_6_3_collision.stl"/>
-</geometry>
-<material name="part_6_3_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="part_1_3">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_1_3_visual.stl"/>
-</geometry>
-<material name="part_1_3_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_1_3_collision.stl"/>
-</geometry>
-<material name="part_1_3_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="part_1_4">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_1_4_visual.stl"/>
-</geometry>
-<material name="part_1_4_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_1_4_collision.stl"/>
-</geometry>
-<material name="part_1_4_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="poignee">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/poignee_visual.stl"/>
-</geometry>
-<material name="poignee_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/poignee_collision.stl"/>
-</geometry>
-<material name="poignee_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="part_11">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_11_visual.stl"/>
-</geometry>
-<material name="part_11_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_11_collision.stl"/>
-</geometry>
-<material name="part_11_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="part_2">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_2_visual.stl"/>
-</geometry>
-<material name="part_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_2_collision.stl"/>
-</geometry>
-<material name="part_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for moteur_poignet_rot_c1 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -504,22 +430,26 @@
 
 <link name="support_pince">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.019 -0.0262499 -0.0234999" rpy="8.69292e-32 -3.9443e-31 -3.00856e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/support_pince_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/support_pince.stl"/>
 </geometry>
 <material name="support_pince_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<color rgba="0.917647 0.917647 0.917647 1.0"/>
 </material>
 </visual>
+<!-- Shapes for support_pince -->
 <collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="5.00285e-05 5.10008e-08 -0.0205999" rpy="8.69292e-32 -3.9443e-31 -3.00856e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/support_pince_collision.stl"/>
+<box size="0.0665 0.0527 0.043" />
 </geometry>
-<material name="support_pince_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
+</collision>
+<collision>
+<origin xyz="2.84644e-08 -0.00124995 0.00550006" rpy="8.69292e-32 -3.9443e-31 -3.00856e-31" />
+<geometry>
+<cylinder length="0.01" radius="0.016" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -528,24 +458,106 @@
 </inertial>
 </link>
 
-<link name="part_11_2">
+<link name="moteur_haut_2">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0135 0.0225 -0.016" rpy="-4.29785e-31 -1.2034e-31 4.93038e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_11_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_haut.stl"/>
 </geometry>
-<material name="part_11_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_haut_material">
+<color rgba="0.0980392 0.0980392 0.0980392 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<!-- Shapes for moteur_haut -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="moteur_poignet_rot_c1_2">
+<visual>
+<origin xyz="0 3.46945e-18 0.01424" rpy="3.14159 -3.30227e-31 -5.91646e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_11_2_collision.stl"/>
+<mesh filename="package://braccio_description/meshes/moteur_poignet_rot_c1.stl"/>
 </geometry>
-<material name="part_11_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="moteur_poignet_rot_c1_material">
+<color rgba="0.0980392 0.0980392 0.0980392 1.0"/>
 </material>
+</visual>
+<!-- Shapes for moteur_poignet_rot_c1 -->
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="pince_mot_1">
+<visual>
+<origin xyz="0 -1.11022e-16 -0.011" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/pince_mot_1.stl"/>
+</geometry>
+<material name="pince_mot_1_material">
+<color rgba="0.196078 0.439216 0.0784314 1.0"/>
+</material>
+</visual>
+<!-- Shapes for pince_mot_1 -->
+<collision>
+<origin xyz="-0.003 -0.0125 0.0515" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<box size="0.039 0.005 0.055" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-3.44259e-32 -1.11022e-16 0.0465" rpy="3.14159 5.98712e-31 0" />
+<geometry>
+<cylinder length="0.005" radius="0.023" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-1.49678e-33 -1.11022e-16 -0.0085" rpy="3.14159 5.98712e-31 0" />
+<geometry>
+<cylinder length="0.005" radius="0.023" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-4.78969e-33 -1.11022e-16 -0.003" rpy="3.14159 5.98712e-31 0" />
+<geometry>
+<cylinder length="0.006" radius="0.011" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.003 -0.0125 -0.0135" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<box size="0.039 0.005 0.055" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.0135 -0.1175 0.012" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<box size="0.003 0.084 0.015" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.001 -0.041 0.019" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<box size="0.032 0.098 0.012" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.008 -0.077 0.019" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<box size="0.019 0.098 0.06" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.005 -0.108 0.019" rpy="1.5708 5.98712e-31 0" />
+<geometry>
+<box size="0.02 0.098 0.01" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -554,77 +566,17 @@
 </inertial>
 </link>
 
-<link name="part_2_2">
+<link name="pince_mot_2">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0135856 -0.0828639 0.0075" rpy="-1.5708 9.16756e-31 -7.03373e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/part_2_2_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/pince_mot_2.stl"/>
 </geometry>
-<material name="part_2_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="pince_mot_2_material">
+<color rgba="0.372549 0.654902 0.239216 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/part_2_2_collision.stl"/>
-</geometry>
-<material name="part_2_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="pince">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_visual.stl"/>
-</geometry>
-<material name="pince_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_collision.stl"/>
-</geometry>
-<material name="pince_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
-<inertial>
-<origin xyz="0 0 0" rpy="0 0 0"/>
-<mass value="0" />
-<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
-</inertial>
-</link>
-
-<link name="pince_2">
-<visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_2_visual.stl"/>
-</geometry>
-<material name="pince_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_2_collision.stl"/>
-</geometry>
-<material name="pince_2_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for pince_mot_2 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -634,8 +586,8 @@
 
 <joint name="22f" type="fixed">
 <origin xyz="0.0135856 -0.0828639 0.0525" rpy="-3.14159 3.27525e-30 6.31089e-30" />
-<parent link="pince" />
-<child link="pince_2" />
+<parent link="pince_mot_1" />
+<child link="pince_mot_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -643,8 +595,8 @@
 
 <joint name="21f" type="fixed">
 <origin xyz="0 0 -0.0077" rpy="-3.9795e-15 2.22045e-16 -1.5708" />
-<parent link="part_2_2" />
-<child link="pince" />
+<parent link="moteur_poignet_rot_c1_2" />
+<child link="pince_mot_1" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -652,8 +604,8 @@
 
 <joint name="pince_mot" type="revolute">
 <origin xyz="-0.0135 0.0225 -0.0026" rpy="3.14159 4.31256e-15 5.73896e-29" />
-<parent link="part_11_2" />
-<child link="part_2_2" />
+<parent link="moteur_haut_2" />
+<child link="moteur_poignet_rot_c1_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="0" upper="1.5708"/>
 <joint_properties friction="0.0"/>
@@ -662,31 +614,23 @@
 <joint name="19f" type="fixed">
 <origin xyz="0.00350003 -0.0142499 -0.00999994" rpy="1.5708 -1.5708 0" />
 <parent link="support_pince" />
-<child link="part_11_2" />
+<child link="moteur_haut_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
-<link name="pince_3">
+<link name="pince_lib_3">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0 0 0.042" rpy="-3.14159 -7.7789e-31 2.36658e-30" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/pince_3_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/pince_lib_3.stl"/>
 </geometry>
-<material name="pince_3_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="pince_lib_3_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_3_collision.stl"/>
-</geometry>
-<material name="pince_3_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for pince_lib_3 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -694,25 +638,17 @@
 </inertial>
 </link>
 
-<link name="pince_4">
+<link name="pince_lib_4">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="-0.0011547 -0.002 0.0055" rpy="3.14159 1.07584e-30 9.86076e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/pince_4_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/pince_lib_4.stl"/>
 </geometry>
-<material name="pince_4_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="pince_lib_4_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_4_collision.stl"/>
-</geometry>
-<material name="pince_4_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for pince_lib_4 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -720,25 +656,17 @@
 </inertial>
 </link>
 
-<link name="pince_5">
+<link name="pince_lib_2">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.01 0 -0.013" rpy="1.5708 -8.00075e-31 1.83862e-31" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/pince_5_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/pince_lib_2.stl"/>
 </geometry>
-<material name="pince_5_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
+<material name="pince_lib_2_material">
+<color rgba="0.341176 0.776471 0.741176 1.0"/>
 </material>
 </visual>
-<collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://braccio_description/meshes/pince_5_collision.stl"/>
-</geometry>
-<material name="pince_5_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
-</collision>
+<!-- Shapes for pince_lib_2 -->
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0"/>
 <mass value="0" />
@@ -748,8 +676,8 @@
 
 <joint name="25f" type="fixed">
 <origin xyz="-0.0111547 -0.002 0.0025" rpy="-9.18292e-15 2.22045e-16 -5.68108e-16" />
-<parent link="pince_4" />
-<child link="pince_5" />
+<parent link="pince_lib_4" />
+<child link="pince_lib_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -757,31 +685,71 @@
 
 <joint name="24f" type="fixed">
 <origin xyz="-0.0011547 0.002 -0.0375" rpy="-3.14159 -1.11022e-16 -3.14159" />
-<parent link="pince_3" />
-<child link="pince_4" />
+<parent link="pince_lib_3" />
+<child link="pince_lib_4" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
-<link name="pince_6">
+<link name="pince_lib_1">
 <visual>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0 0 -0.009" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/pince_6_visual.stl"/>
+<mesh filename="package://braccio_description/meshes/pince_lib_1.stl"/>
 </geometry>
-<material name="pince_6_material">
+<material name="pince_lib_1_material">
 <color rgba="0.0470588 0.470588 0.435294 1.0"/>
 </material>
 </visual>
+<!-- Shapes for pince_lib_1 -->
 <collision>
-<origin xyz="0 0 0" rpy="0 -0 0" />
+<origin xyz="0.0055 0.016 -0.0755" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
 <geometry>
-<mesh filename="package://braccio_description/meshes/pince_6_collision.stl"/>
+<box size="0.044 0.005 0.062" />
 </geometry>
-<material name="pince_6_material">
-<color rgba="0.5 0.5 0.5 1.0"/>
-</material>
+</collision>
+<collision>
+<origin xyz="4.25284e-32 1.28358e-33 -0.069" rpy="-3.06184e-32 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<cylinder length="0.008" radius="0.023" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0 0 -0.009" rpy="-3.06184e-32 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<cylinder length="0.008" radius="0.023" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.0055 0.016 -0.0025" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<box size="0.044 0.005 0.062" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.0265 0.1175 -0.032" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<box size="0.003 0.084 0.015" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.0065 0.041 -0.039" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<box size="0.043 0.098 0.012" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.0085 0.0775 -0.039" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<box size="0.019 0.098 0.061" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="0.01375 0.109 -0.039" rpy="-1.5708 -9.87809e-31 -1.70753e-32" />
+<geometry>
+<box size="0.0275 0.098 0.012" />
+</geometry>
 </collision>
 <inertial>
 <origin xyz="0.00232943 0.0532684 -0.0199597" rpy="0 0 0"/>
@@ -791,9 +759,9 @@
 </link>
 
 <joint name="26f" type="fixed">
-<origin xyz="6.93889e-18 -2.22045e-16 0.039" rpy="-3.67723e-17 1.72085e-15 -3.14159" />
-<parent link="pince_3" />
-<child link="pince_6" />
+<origin xyz="0 0 0.039" rpy="-3.67723e-17 1.72085e-15 -3.14159" />
+<parent link="pince_lib_3" />
+<child link="pince_lib_1" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -802,15 +770,15 @@
 <joint name="pince_lib" type="revolute">
 <origin xyz="0.024 -0.000549949 -0.0234999" rpy="1.5708 -6.66587e-29 -2.94781e-15" />
 <parent link="support_pince" />
-<child link="pince_3" />
+<child link="pince_lib_3" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="0" upper="1.5708"/>
 <joint_properties friction="0.0"/>
 </joint>
 
 <joint name="18f" type="fixed">
-<origin xyz="-2.60209e-18 -8.67362e-19 0.01431" rpy="3.14159 -1.57772e-30 1.5708" />
-<parent link="part_2" />
+<origin xyz="-3.46945e-18 3.46945e-18 0.01431" rpy="3.14159 -1.57772e-30 1.5708" />
+<parent link="moteur_poignet_rot_c1" />
 <child link="support_pince" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
@@ -819,8 +787,8 @@
 
 <joint name="poignet_rot" type="revolute">
 <origin xyz="0.0135 0.0145 -0.0026" rpy="-2.22045e-16 -2.22045e-16 -1.64305e-14" />
-<parent link="part_11" />
-<child link="part_2" />
+<parent link="moteur_haut" />
+<child link="moteur_poignet_rot_c1" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="-3.14159" upper="3.14159"/>
 <joint_properties friction="0.0"/>
@@ -828,8 +796,8 @@
 
 <joint name="16f" type="fixed">
 <origin xyz="0.008 0.110686 -0.016" rpy="-1.5708 1.5708 0" />
-<parent link="poignee" />
-<child link="part_11" />
+<parent link="poignet" />
+<child link="moteur_haut" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -837,8 +805,8 @@
 
 <joint name="poignet_incl" type="revolute">
 <origin xyz="0.0080763 -0.0358 0.01475" rpy="-3.8477e-15 1.20224e-15 -3.14159" />
-<parent link="part_1_4" />
-<child link="poignee" />
+<parent link="moteur_poignet_incl" />
+<child link="poignet" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="-1.74533" upper="1.74533"/>
 <joint_properties friction="0.0"/>
@@ -846,17 +814,17 @@
 
 <joint name="14f" type="fixed">
 <origin xyz="-0.1342 -0.0085 0.009" rpy="-3.14159 -2.26416e-31 1.5708" />
-<parent link="part_1_3" />
-<child link="part_1_4" />
+<parent link="avant_bras" />
+<child link="moteur_poignet_incl" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
 <joint name="13f" type="fixed">
-<origin xyz="0.0109949 0.000336119 0.006" rpy="3.14159 1.0011e-14 3.14159" />
-<parent link="part_6_3" />
-<child link="part_1_3" />
+<origin xyz="0.0109949 0.000336119 0.006" rpy="3.14159 1.0011e-14 -3.14159" />
+<parent link="moteur_bas_c1_3" />
+<child link="avant_bras" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -864,8 +832,8 @@
 
 <joint name="coude" type="revolute">
 <origin xyz="-0.0109994 0.0453 -0.0362" rpy="3.14159 -2.81242e-15 1.5708" />
-<parent link="part_17" />
-<child link="part_6_3" />
+<parent link="moteur_coude" />
+<child link="moteur_bas_c1_3" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="-2.0944" upper="2.0944"/>
 <joint_properties friction="0.0"/>
@@ -873,8 +841,8 @@
 
 <joint name="11f" type="fixed">
 <origin xyz="-0.176688 0.011 0.04325" rpy="1.64806e-15 -1.74617e-15 1.5708" />
-<parent link="part_1_2" />
-<child link="part_17" />
+<parent link="bras" />
+<child link="moteur_coude" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -882,26 +850,26 @@
 
 <joint name="10f" type="fixed">
 <origin xyz="0.000336119 -0.0109949 0.0002" rpy="-3.14159 4.87172e-17 -1.5708" />
-<parent link="part_6_2" />
-<child link="part_1_2" />
+<parent link="moteur_bas_c1_2" />
+<child link="bras" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
 <joint name="9f" type="fixed">
-<origin xyz="3.38813e-19 0 -0.0048" rpy="-3.14159 -8.8436e-31 -5.55112e-17" />
-<parent link="part_4_2" />
-<child link="part_6_2" />
+<origin xyz="-3.46945e-18 0 -0.0048" rpy="-3.14159 -8.8436e-31 -5.55112e-17" />
+<parent link="moteur_bas_c3_2" />
+<child link="moteur_bas_c1_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
 <joint name="8f" type="fixed">
-<origin xyz="-2.43945e-18 0 0.0013" rpy="3.14159 -1.23886e-14 -3.14159" />
-<parent link="part_5_2" />
-<child link="part_4_2" />
+<origin xyz="3.46945e-18 0 0.0013" rpy="3.14159 -1.23886e-14 -3.14159" />
+<parent link="moteur_bas_c2_2" />
+<child link="moteur_bas_c3_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -909,8 +877,8 @@
 
 <joint name="epaule" type="revolute">
 <origin xyz="-0.011 -0.0478 -0.038" rpy="-3.14159 -3.90704e-15 -3.14159" />
-<parent link="part_7_2" />
-<child link="part_5_2" />
+<parent link="moteur_bas_2" />
+<child link="moteur_bas_c2_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="-2.0944" upper="2.0944"/>
 <joint_properties friction="0.0"/>
@@ -918,17 +886,17 @@
 
 <joint name="6f" type="fixed">
 <origin xyz="0.011 0.01725 0.0203" rpy="-1.5708 4.11812e-22 5.55112e-17" />
-<parent link="part_1" />
-<child link="part_7_2" />
+<parent link="support_moteur_epaule" />
+<child link="moteur_bas_2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
 <joint name="5f" type="fixed">
-<origin xyz="-6.08714e-15 6.45249e-15 -0.0098" rpy="-3.14159 4.11812e-22 3.14159" />
-<parent link="part_6" />
-<child link="part_1" />
+<origin xyz="-6.08888e-15 6.45317e-15 -0.0098" rpy="-3.14159 4.11812e-22 3.14159" />
+<parent link="moteur_bas_c1" />
+<child link="support_moteur_epaule" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -936,8 +904,8 @@
 
 <joint name="4f" type="fixed">
 <origin xyz="-0.000120642 -0.00012451 0.002" rpy="3.14159 7.76538e-31 -1.18346e-30" />
-<parent link="part_5" />
-<child link="part_6" />
+<parent link="moteur_bas_c2" />
+<child link="moteur_bas_c1" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -945,8 +913,8 @@
 
 <joint name="base" type="revolute">
 <origin xyz="-2.68787e-12 0.0236933 0.004" rpy="3.27819e-22 6.47483e-22 -1.5708" />
-<parent link="part_7" />
-<child link="part_5" />
+<parent link="moteur_bas" />
+<child link="moteur_bas_c2" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" lower="-4.71239" upper="4.71239"/>
 <joint_properties friction="0.0"/>
@@ -955,14 +923,14 @@
 <joint name="1f" type="fixed">
 <origin xyz="-0.0490748 0.0612586 -0.09" rpy="3.14159 1.22465e-16 -3.14159" />
 <parent link="socle" />
-<child link="part_7" />
+<child link="moteur_bas" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
 <joint name="0f" type="fixed">
-<origin xyz="0.0490748 0.0849519 -0.0095" rpy="-3.14159 -2.52904e-15 2.28411e-15" />
+<origin xyz="0.0582138 0.0688761 -0.0341279" rpy="-3.14159 -2.52904e-15 2.28411e-15" />
 <parent link="base_link" />
 <child link="socle" />
 <axis xyz="0 0 1"/>

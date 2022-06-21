@@ -8,4 +8,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: Xavier Cornuez
     author_email: xavier.cornuez@enseirb-matmeca.fr
-    generated_timestamp: 1655797827
+    generated_timestamp: 1655822688

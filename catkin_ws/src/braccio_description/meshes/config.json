@@ -2,6 +2,6 @@
     "documentId": "b1e6a25ed68ab1d075ca2128",
     "outputFormat": "urdf",
     "assemblyName": "Assembly 3",
-    "mergeSTLs": "all",
+    "mergeSTLs": "no",
     "useScads": "false"
 }
