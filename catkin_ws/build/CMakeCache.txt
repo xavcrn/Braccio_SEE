@@ -397,6 +397,12 @@ braccio_description_BINARY_DIR:STATIC=/home/xavier/robot_braccio/depot_git/catki
 //Value Computed by CMake
 braccio_description_SOURCE_DIR:STATIC=/home/xavier/robot_braccio/depot_git/catkin_ws/src/braccio_description
 
+//Value Computed by CMake
+braccio_moveit_config_BINARY_DIR:STATIC=/home/xavier/robot_braccio/depot_git/catkin_ws/build/braccio_moveit_config
+
+//Value Computed by CMake
+braccio_moveit_config_SOURCE_DIR:STATIC=/home/xavier/robot_braccio/depot_git/catkin_ws/src/braccio_moveit_config
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
@@ -669,7 +675,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <robot name="onshape">
 <link name="base_link">
 <visual>
@@ -16,6 +15,32 @@
 <mesh filename="package://braccio_description/meshes/base_link_collision.stl"/>
 </geometry>
 <material name="base_link_material">
+<color rgba="0.5 0.5 0.5 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<mass value="0" />
+<inertia ixx="0" ixy="0"  ixz="0" iyy="0" iyz="0" izz="0" />
+</inertial>
+</link>
+
+<link name="socle">
+<visual>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/socle_visual.stl"/>
+</geometry>
+<material name="socle_material">
+<color rgba="0.5 0.5 0.5 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://braccio_description/meshes/socle_collision.stl"/>
+</geometry>
+<material name="socle_material">
 <color rgba="0.5 0.5 0.5 1.0"/>
 </material>
 </collision>
@@ -131,7 +156,7 @@
 </link>
 
 <joint name="3f" type="fixed">
-<origin xyz="-6.09235e-15 6.45317e-15 -0.0043" rpy="3.14159 1.24298e-32 -5.55112e-17" />
+<origin xyz="-6.08714e-15 6.45312e-15 -0.0043" rpy="3.14159 1.24299e-32 -5.55112e-17" />
 <parent link="part_6" />
 <child link="part_4" />
 <axis xyz="0 0 1"/>
@@ -838,7 +863,7 @@
 </joint>
 
 <joint name="coude" type="revolute">
-<origin xyz="-0.0109994 0.0453 -0.0362" rpy="-3.14159 -1.40621e-15 1.5708" />
+<origin xyz="-0.0109994 0.0453 -0.0362" rpy="3.14159 -2.81242e-15 1.5708" />
 <parent link="part_17" />
 <child link="part_6_3" />
 <axis xyz="0 0 1"/>
@@ -865,7 +890,7 @@
 </joint>
 
 <joint name="9f" type="fixed">
-<origin xyz="-8.72783e-18 2.77556e-17 -0.0048" rpy="-3.14159 -1.46256e-30 -5.55112e-17" />
+<origin xyz="3.38813e-19 0 -0.0048" rpy="-3.14159 -8.8436e-31 -5.55112e-17" />
 <parent link="part_4_2" />
 <child link="part_6_2" />
 <axis xyz="0 0 1"/>
@@ -874,7 +899,7 @@
 </joint>
 
 <joint name="8f" type="fixed">
-<origin xyz="1.11131e-18 2.77556e-17 0.0013" rpy="3.14159 -1.23886e-14 -3.14159" />
+<origin xyz="-2.43945e-18 0 0.0013" rpy="3.14159 -1.23886e-14 -3.14159" />
 <parent link="part_5_2" />
 <child link="part_4_2" />
 <axis xyz="0 0 1"/>
@@ -883,7 +908,7 @@
 </joint>
 
 <joint name="epaule" type="revolute">
-<origin xyz="-0.011 -0.0478 -0.038" rpy="-3.14159 -1.84536e-15 -3.14159" />
+<origin xyz="-0.011 -0.0478 -0.038" rpy="-3.14159 -3.90704e-15 -3.14159" />
 <parent link="part_7_2" />
 <child link="part_5_2" />
 <axis xyz="0 0 1"/>
@@ -892,7 +917,7 @@
 </joint>
 
 <joint name="6f" type="fixed">
-<origin xyz="0.011 0.01725 0.0203" rpy="-1.5708 7.88861e-31 6.05033e-40" />
+<origin xyz="0.011 0.01725 0.0203" rpy="-1.5708 4.11812e-22 5.55112e-17" />
 <parent link="part_1" />
 <child link="part_7_2" />
 <axis xyz="0 0 1"/>
@@ -901,7 +926,7 @@
 </joint>
 
 <joint name="5f" type="fixed">
-<origin xyz="-6.08888e-15 6.45493e-15 -0.0078" rpy="3.14159 -3.16787e-30 3.14159" />
+<origin xyz="-6.08714e-15 6.45249e-15 -0.0098" rpy="-3.14159 4.11812e-22 3.14159" />
 <parent link="part_6" />
 <child link="part_1" />
 <axis xyz="0 0 1"/>
@@ -910,7 +935,7 @@
 </joint>
 
 <joint name="4f" type="fixed">
-<origin xyz="-0.000120642 -0.00012451 0.002" rpy="3.14159 7.76538e-31 1.14427e-34" />
+<origin xyz="-0.000120642 -0.00012451 0.002" rpy="3.14159 7.76538e-31 -1.18346e-30" />
 <parent link="part_5" />
 <child link="part_6" />
 <axis xyz="0 0 1"/>
@@ -919,7 +944,7 @@
 </joint>
 
 <joint name="base" type="revolute">
-<origin xyz="0.011 0.0478 0.004" rpy="1.63909e-22 3.23741e-22 1.5708" />
+<origin xyz="-2.68787e-12 0.0236933 0.004" rpy="3.27819e-22 6.47483e-22 -1.5708" />
 <parent link="part_7" />
 <child link="part_5" />
 <axis xyz="0 0 1"/>
@@ -928,9 +953,18 @@
 </joint>
 
 <joint name="1f" type="fixed">
-<origin xyz="-0.011 -0.0478 0.0825" rpy="0 -0 0" />
-<parent link="base_link" />
+<origin xyz="-0.0490748 0.0612586 -0.09" rpy="3.14159 1.22465e-16 -3.14159" />
+<parent link="socle" />
 <child link="part_7" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="0f" type="fixed">
+<origin xyz="0.0490748 0.0849519 -0.0095" rpy="-3.14159 -2.52904e-15 2.28411e-15" />
+<parent link="base_link" />
+<child link="socle" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>

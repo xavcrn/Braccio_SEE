@@ -1,0 +1,19 @@
+controller_list:
+  - name: fake_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - base
+      - epaule
+      - coude
+      - poignet_incl
+      - poignet_rot
+  - name: fake_pince_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - pince_mot
+      - pince_lib
+initial:  # Define initial robot poses per group
+  - group: arm
+    pose: initial
+  - group: pince
+    pose: open

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: braccio_description
+    relative_path: urdf/robot.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/onshape.srdf
+  CONFIG:
+    author_name: Xavier Cornuez
+    author_email: xavier.cornuez@enseirb-matmeca.fr
+    generated_timestamp: 1655797827
