@@ -1,4 +1,4 @@
-<robot name="onshape">
+<robot name="Braccio">
 <link name="base_link">
 <visual>
 <origin xyz="-0.0486686 -0.0583018 -0.164128" rpy="-2.52904e-15 -3.23741e-22 1.5708" />
